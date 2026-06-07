@@ -20,4 +20,10 @@ public:
 	//HashCombineFastInt declaration
 	UFUNCTION(BlueprintCallable, Category = "Hash")
 	static int32 HashCombineFastInt(int32 A, int32 B);
+	//GetHashInt declaration
+	UFUNCTION(BlueprintPure, Category = "Hash")
+	static int32 GetHashInt(int32 Value);
+	//GetHashFloat declaration
+	UFUNCTION(BlueprintPure, Category = "Hash")
+	static float GetHashFloat(float Value);
 };

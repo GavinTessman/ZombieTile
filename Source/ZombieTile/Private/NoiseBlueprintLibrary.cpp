@@ -16,3 +16,13 @@ int32 UNoiseBlueprintLibrary::HashCombineFastInt(int32 A, int32 B)
         GetTypeHash(B)
     );
 }
+//GetHashInt Definition
+int32 UNoiseBlueprintLibrary::GetHashInt(int32 Value)
+{
+    return GetTypeHash(Value);
+}
+//GetHashFloat Definition
+float UNoiseBlueprintLibrary::GetHashFloat(float Value)
+{
+    return GetTypeHash(Value);
+}
