@@ -17,6 +17,14 @@ public:
 	//GetPerlinNoise2D declaration
 	UFUNCTION(BlueprintCallable, Category = "World Generation")
 	static float GetPerlinNoise2D(FVector2D Location);
+	//GetVoronoiDistance2D delcaration
+	UFUNCTION(BlueprintCallable, Category = "World Generation")
+	static void GetVoronoiDistance2D(
+		FVector2D Location,
+		int32 Seed,
+		float& Distance,
+		int32& CellID
+	);
 	//HashCombineFastInt declaration
 	UFUNCTION(BlueprintCallable, Category = "Hash")
 	static int32 HashCombineFastInt(int32 A, int32 B);
